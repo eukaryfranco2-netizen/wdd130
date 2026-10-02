@@ -50,8 +50,6 @@
 
         <section id="matricula">
 
-            <h2>Formulário de Matrícula</h2>
-
             <form> 
 
                 <fieldset> 
@@ -64,112 +62,54 @@
 
                     <br><br> 
 
-                    <!-- LEGENDA + INPUT DE TELEFONE - TELEFONE -->
-
-                    <label for="idtel">Telefone:</label>
-
-                    <input type="tel" name="telefone" id="idtel" placeholder="(99) 99999-9999" required> 
-
-                    <br><br>
-
-                    <!-- LEGENDA + SELECT + OPTIONS - SEXO -->
-
-                    <label for="idsexo">Sexo:</label>
-
-                    <select name="sexo" id="idsexo"> 
-
-                        <option>Selecione</option> 
-
-                        <option value="masc">Masculino</option> 
-                        <option value="fem">Feminino</option>
-
-                        <option value="outro">Outro</option>
-
-                    </select> 
-                    <br><br>
-
-                    <!-- LEGENDA + INPUT DE EMAIL - EMAIL -->
+                    <!-- LEGENDA + INPUT DO TIPO EMAIL - E-MAIL -->
 
                     <label for="idemail">E-mail:</label>
 
                     <input type="email" name="email" id="idemail" placeholder="exemplo@gmail.com" required> 
-                    <br><br>
-
-                    <!-- LEGENDA + INPUT DO TIPO RADIO - PLANOS -->
-
-                    <p>Selecione o plano:</p>
-
-                    <input type="radio" name="planos" id="idbasico"> 
-                    <label for="idbasico">Básico - 59,90</label>
-
-                    <br>
-
-                    <input type="radio" name="planos" id="idpremium">
-
-                    <label for="idpremium">Premium - 129,90</label>
-
-                    <br>
-
-                    <input type="radio" name="planos" id="idblack">
-
-                    <label for="idblack">Black - 229,90</label>
 
                     <br><br>
+
 
                     <!-- LEGENDA + INPUT DO TIPO CHECKBOX - ATIVIDADES -->
 
-                    <p>Escolha as atividades de interesse:</p>
+                    <p>Propósito da mensagem</p>
 
-                    <input type="checkbox" name="atividades" id="idmusculacao"> 
-                    <label for="idmusculacao">Musculação</label>
-
-                    <br>
-
-                    <input type="checkbox" name="atividades" id="idaerobico">
-
-                    <label for="idaerobico">Aeróbicos</label>
+                    <input type="checkbox" name="mensagem" id="idduvidageral"> 
+                    <label for="idduvidageral">Dúvida geral</label>
 
                     <br>
 
-                    <input type="checkbox" name="atividades" id="idfuncional">
+                    <input type="checkbox" name="mensagem" id="idperguntasobrereserva">
 
-                    <label for="idfuncional">Funcional</label>
-
-                    <br>
-
-                    <input type="checkbox" name="atividades" id="idboxe">
-
-                    <label for="idboxe">Boxe</label>
+                    <label for="idperguntasobrereserva">Pergunta sobre Reserva</label>
 
                     <br>
 
-                    <input type="checkbox" name="atividades" id="idalongamento">
+                    <input type="checkbox" name="mensagem" id="idsugestao">
 
-                    <label for="idalongamento">Alongamento</label>
+                    <label for="idsugestao">Sugestão</label>
 
-                    <br><br>
+                    <br>
 
-                    <!-- LEGENDA + INPUT DO TIPO SENHA - SENHA DO USUÁRIO -->
+                    <label for="idmensagem">Mensagem:</label> 
 
-                    <label for="idsenha">Senha:</label>
+                    <input type="text" name="mensagem" id="idmensagem" placeholder="Digite sua mensagem" required> 
 
-                    <input type="password" name="senha" id="idsenha" placeholder="Digite sua senha"> 
+                    <br><br> 
 
-                    <br><br>
+                    <!-- LEGENDA + INPUT DO TIPO CHECKBOX - NEWSLELTER-->
 
-                    <!-- LEGENDA + INPUT DO TIPO CHECKBOX - TERMOS E CONDIÇÕES -->
+                    <input type="checkbox" name="newsletter" id="idnewsletter" required>
 
-                    <input type="checkbox" name="termos" id="idtermos" required>
-
-                    <label for="idtermos">Aceita todos os <a href="termos.html">termos</a> e condições</label> 
+                    <label for="idnewsletter">Por favor, me inscreva na newsletter mensal</label> 
 
                     <br><br>
 
                     <!-- BOTÕES - ENVIAR/SUBMIT E LIMPAR/RESET -->
 
-                    <button type="submit">Enviar</button> 
+                    <button type="submit">Entrar em Contato!</button> 
 
-                    <button type="reset">Limpar</button> 
                 </fieldset> 
             </form> 
         </section>
