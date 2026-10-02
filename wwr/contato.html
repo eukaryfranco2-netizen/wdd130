@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contato | RAFTING AVENTURE</title>
+    <title>Fale Conosco | RAFTING AVENTURE</title>
 
     <meta name="description"
-      content="Entre em contato conosco e descubra mais sobre nossas aventuras de rafting.">
+    content="Entre em contato com a Companhia Rafting Aventure: veja nosso endereço, telefone, e-mail, mapa e envie sua dúvida, reserva ou sugestão.">
 
     <meta name="author" content="Eukary Franco">
 
@@ -30,91 +30,135 @@
 
     <main>
 
+        <!-- INFORMAÇÕES DE CONTATO -->
+
         <div class="contato">
             <article>
                 <h2>Companhia Rafting Aventure</h2>
 
                 <p>
-                123 Rua Chipre
-                Itaim Bibi, São Paulo - SP
-                +55 (11) 99999-9999
-                contato@raftingaventure.com</p>
+                    123 Rua Chipre<br>
+                    Itaim Bibi, São Paulo - SP<br>
+                    +55 (11) 99999-9999<br>
+                    contato@raftingaventure.com
+                </p>
             </article>
+        </div>
+
+        <!-- MAPA + FORMULÁRIO LADO A LADO -->
+
+        <div class="mapa-form">
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14626.258415635788!2d-46.69140707261121!3d-23.584075944972895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5742bc832a29%3A0xa9323f13433864db!2sItaim%20Bibi%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1790902934822!5m2!1spt-BR!2sbr" width="300" height="300" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Mapa da localização da Rafting Aventure"></iframe>
+            </div>
+
+            <section id="matricula">
+
+                <form action="#" method="post">
+
+                    <fieldset>
+
+                        <legend>Fale Conosco</legend>
+
+                        <!-- NOME -->
+
+                        <label for="idnome">Nome:</label>
+                        <input type="text" name="nome" id="idnome" placeholder="Digite seu nome" required>
+
+                        <br><br>
+
+                        <!-- E-MAIL -->
+
+                        <label for="idemail">E-mail:</label>
+                        <input type="email" name="email" id="idemail" placeholder="exemplo@gmail.com" required>
+
+                        <br><br>
+
+                        <!-- FINALIDADE DA MENSAGEM (RADIO: mesmo name = escolhe só uma) -->
+
+                        <p>Finalidade da mensagem:</p>
+
+                        <input type="radio" name="finalidade" id="idconsultageral" value="consulta-geral" required>
+                        <label for="idconsultageral">Consulta Geral</label>
+
+                        <br>
+
+                        <input type="radio" name="finalidade" id="idperguntareserva" value="pergunta-reserva">
+                        <label for="idperguntareserva">Pergunta sobre Reserva</label>
+
+                        <br>
+
+                        <input type="radio" name="finalidade" id="idsugestaosite" value="sugestao-site">
+                        <label for="idsugestaosite">Sugestão de Site</label>
+
+                        <br><br>
+
+                        <!-- MENSAGEM -->
+
+                        <label for="idmensagem">Mensagem:</label>
+                        <br>
+                        <textarea name="mensagem" id="idmensagem" rows="4" cols="30" placeholder="Digite sua mensagem" required></textarea>
+
+                        <br><br>
+
+                        <!-- NEWSLETTER (opcional) -->
+
+                        <input type="checkbox" name="newsletter" id="idnewsletter">
+                        <label for="idnewsletter">Quero receber a newsletter mensal</label>
+
+                        <br><br>
+
+                        <!-- BOTÃO DE ENVIO -->
+
+                        <button type="submit">Entrar em Contato!</button>
+
+                    </fieldset>
+
+                </form>
+            </section>
 
         </div>
 
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14626.258415635788!2d-46.69140707261121!3d-23.584075944972895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5742bc832a29%3A0xa9323f13433864db!2sItaim%20Bibi%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1790902934822!5m2!1spt-BR!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <!-- PERFIS DOS FUNCIONÁRIOS -->
 
-        </div>
+        <section class="equipe">
+            <h2>Nossa Equipe</h2>
 
-        <section id="matricula">
+            <div class="equipe-grid">
 
-            <form> 
+                <figure>
+                    <img src="imagens/carlos.jpg" alt="Foto de Carlos Silva">
+                    <figcaption>Carlos Silva<br>Guia de Rafting</figcaption>
+                </figure>
 
-                <fieldset> 
+                <figure>
+                    <img src="imagens/mariana.jpg" alt="Foto de Mariana Souza">
+                    <figcaption>Mariana Souza<br>Instrutora de Segurança</figcaption>
+                </figure>
 
-                    <!-- LEGENDA + INPUT DE TEXTO - NOME -->
+                <figure>
+                    <img src="imagens/rafael.jpg" alt="Foto de Rafael Lima">
+                    <figcaption>Rafael Lima<br>Atendimento e Reservas</figcaption>
+                </figure>
 
-                    <label for="idnome">Nome:</label> 
-
-                    <input type="text" name="nome" id="idnome" placeholder="Digite seu nome" required> 
-
-                    <br><br> 
-
-                    <!-- LEGENDA + INPUT DO TIPO EMAIL - E-MAIL -->
-
-                    <label for="idemail">E-mail:</label>
-
-                    <input type="email" name="email" id="idemail" placeholder="exemplo@gmail.com" required> 
-
-                    <br><br>
-
-
-                    <!-- LEGENDA + INPUT DO TIPO CHECKBOX - ATIVIDADES -->
-
-                    <p>Propósito da mensagem</p>
-
-                    <input type="checkbox" name="mensagem" id="idduvidageral"> 
-                    <label for="idduvidageral">Dúvida geral</label>
-
-                    <br>
-
-                    <input type="checkbox" name="mensagem" id="idperguntasobrereserva">
-
-                    <label for="idperguntasobrereserva">Pergunta sobre Reserva</label>
-
-                    <br>
-
-                    <input type="checkbox" name="mensagem" id="idsugestao">
-
-                    <label for="idsugestao">Sugestão</label>
-
-                    <br>
-
-                    <label for="idmensagem">Mensagem:</label> 
-
-                    <input type="text" name="mensagem" id="idmensagem" placeholder="Digite sua mensagem" required> 
-
-                    <br><br> 
-
-                    <!-- LEGENDA + INPUT DO TIPO CHECKBOX - NEWSLELTER-->
-
-                    <input type="checkbox" name="newsletter" id="idnewsletter" required>
-
-                    <label for="idnewsletter">Por favor, me inscreva na newsletter mensal</label> 
-
-                    <br><br>
-
-                    <!-- BOTÕES - ENVIAR/SUBMIT E LIMPAR/RESET -->
-
-                    <button type="submit">Entrar em Contato!</button> 
-
-                </fieldset> 
-            </form> 
+            </div>
         </section>
 
-    </main> 
+    </main>
+
+    <!-- RODAPÉ: copie o <footer> real de sobre.html para ficar idêntico -->
+
+    <footer>
+        <p>&copy; 2026 Companhia Rafting Aventure</p>
+
+        <nav class="socialmedia">
+            <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="imagens/instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
+        </nav>
+    </footer>
+
 </body>
 
 </html>
