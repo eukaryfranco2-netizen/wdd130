@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sobre Nós | RAFTING AVENTURE</title>
+    <title>Contato | RAFTING AVENTURE</title>
 
     <meta name="description"
-      content="Conheça nossa história e descubra nossas aventuras de rafting.">
+      content="Entre em contato conosco e descubra mais sobre nossas aventuras de rafting.">
 
     <meta name="author" content="Eukary Franco">
 
@@ -30,122 +30,151 @@
 
     <main>
 
-        <div class="hero">
-
-            <img src="imagens/rafting17_600.jpg" alt="Aventureiros praticando rafting no rio">
-
-            <h1>RAFTING AVENTURE</h1>
-
+        <div class="contato">
             <article>
-                <h2>Indo para a Aventura</h2>
-
-                <img src="imagens/rafting17_600.jpg" alt="Equipe praticando rafting">
+                <h2>Companhia Rafting Aventure</h2>
 
                 <p>
-                    Nossa paixão profunda por aventuras intensas e pelo
-                    contato genuíno com a natureza é o que nos impulsiona
-                    diariamente a superar expectativas. Acreditamos que
-                    cada jornada deve ser memorável, por isso trabalhamos
-                    com dedicação para criar experiências únicas, seguras
-                    e personalizadas para cada um dos nossos clientes,
-                    transformando momentos de lazer em memórias para a
-                    vida toda.
-                </p>
+                123 Rua Chipre
+                Itaim Bibi, São Paulo - SP
+                +55 (11) 99999-9999
+                contato@raftingaventure.com</p>
             </article>
 
         </div>
 
-        <section class="historia">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14626.258415635788!2d-46.69140707261121!3d-23.584075944972895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5742bc832a29%3A0xa9323f13433864db!2sItaim%20Bibi%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1790902934822!5m2!1spt-BR!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
-            <h2>Nossa História</h2>
+        </div>
 
-            <p>
-                A RAFTING AVENTURE nasceu de uma simples, mas poderosa
-                ideia: oferecer experiências de rafting inesquecíveis
-                em pleno coração da natureza. O que começou como o sonho
-                de partilhar a adrenalina e a beleza dos rios selvagens
-                transformou-se num projeto dedicado a conectar as pessoas
-                à aventura, unindo a emoção das corredeiras à tranquilidade
-                e grandiosidade das paisagens naturais.
-            </p>
+        <section id="matricula">
 
+            <h2>Formulário de Matrícula</h2>
+
+            <form> 
+
+                <fieldset> 
+
+                    <!-- LEGENDA + INPUT DE TEXTO - NOME -->
+
+                    <label for="idnome">Nome:</label> 
+
+                    <input type="text" name="nome" id="idnome" placeholder="Digite seu nome" required> 
+
+                    <br><br> 
+
+                    <!-- LEGENDA + INPUT DE TELEFONE - TELEFONE -->
+
+                    <label for="idtel">Telefone:</label>
+
+                    <input type="tel" name="telefone" id="idtel" placeholder="(99) 99999-9999" required> 
+
+                    <br><br>
+
+                    <!-- LEGENDA + SELECT + OPTIONS - SEXO -->
+
+                    <label for="idsexo">Sexo:</label>
+
+                    <select name="sexo" id="idsexo"> 
+
+                        <option>Selecione</option> 
+
+                        <option value="masc">Masculino</option> 
+                        <option value="fem">Feminino</option>
+
+                        <option value="outro">Outro</option>
+
+                    </select> 
+                    <br><br>
+
+                    <!-- LEGENDA + INPUT DE EMAIL - EMAIL -->
+
+                    <label for="idemail">E-mail:</label>
+
+                    <input type="email" name="email" id="idemail" placeholder="exemplo@gmail.com" required> 
+                    <br><br>
+
+                    <!-- LEGENDA + INPUT DO TIPO RADIO - PLANOS -->
+
+                    <p>Selecione o plano:</p>
+
+                    <input type="radio" name="planos" id="idbasico"> 
+                    <label for="idbasico">Básico - 59,90</label>
+
+                    <br>
+
+                    <input type="radio" name="planos" id="idpremium">
+
+                    <label for="idpremium">Premium - 129,90</label>
+
+                    <br>
+
+                    <input type="radio" name="planos" id="idblack">
+
+                    <label for="idblack">Black - 229,90</label>
+
+                    <br><br>
+
+                    <!-- LEGENDA + INPUT DO TIPO CHECKBOX - ATIVIDADES -->
+
+                    <p>Escolha as atividades de interesse:</p>
+
+                    <input type="checkbox" name="atividades" id="idmusculacao"> 
+                    <label for="idmusculacao">Musculação</label>
+
+                    <br>
+
+                    <input type="checkbox" name="atividades" id="idaerobico">
+
+                    <label for="idaerobico">Aeróbicos</label>
+
+                    <br>
+
+                    <input type="checkbox" name="atividades" id="idfuncional">
+
+                    <label for="idfuncional">Funcional</label>
+
+                    <br>
+
+                    <input type="checkbox" name="atividades" id="idboxe">
+
+                    <label for="idboxe">Boxe</label>
+
+                    <br>
+
+                    <input type="checkbox" name="atividades" id="idalongamento">
+
+                    <label for="idalongamento">Alongamento</label>
+
+                    <br><br>
+
+                    <!-- LEGENDA + INPUT DO TIPO SENHA - SENHA DO USUÁRIO -->
+
+                    <label for="idsenha">Senha:</label>
+
+                    <input type="password" name="senha" id="idsenha" placeholder="Digite sua senha"> 
+
+                    <br><br>
+
+                    <!-- LEGENDA + INPUT DO TIPO CHECKBOX - TERMOS E CONDIÇÕES -->
+
+                    <input type="checkbox" name="termos" id="idtermos" required>
+
+                    <label for="idtermos">Aceita todos os <a href="termos.html">termos</a> e condições</label> 
+
+                    <br><br>
+
+                    <!-- BOTÕES - ENVIAR/SUBMIT E LIMPAR/RESET -->
+
+                    <button type="submit">Enviar</button> 
+
+                    <button type="reset">Limpar</button> 
+                </fieldset> 
+            </form> 
         </section>
 
-        <section class="aventuras">
-
-            <h2>A aventura está te esperando!</h2>
-
-            <div class="aventuras-grid">
-
-                <figure>
-                    <img src="imagens/rafting17_600.jpg"
-                      alt="Aventura de rafting no Salto do Rio Negro">
-                    <figcaption>
-                        Salto do Rio Negro
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="imagens/rafting18_600.jpg"
-                      alt="Rafting na Corredeira do Rio Paranapanema">
-                    <figcaption>
-                        Corredeira do Rio Paranapanema
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="imagens/rafting36_1024.jpg"
-                      alt="Aventura na Corredeira do Rio Jacaré">
-                    <figcaption>
-                        Corredeira do Rio Jacaré
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="imagens/rafting58_600.jpg"
-                      alt="Aventureiros explorando as corredeiras">
-                    <figcaption>
-                        Aventura nas Corredeiras
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img src="imagens/rafting17_600.jpg" alt="Grupo de rafting em águas naturais">
-                    <figcaption>
-                        Expedição nas Águas Selvagens
-                    </figcaption>
-                </figure>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>
-            &copy; 2026 RAFTING AVENTURE. Todos os direitos reservados.
-        </p>
-
-        <nav class="socialmedia">
-
-            <a href="https://www.facebook.com/">
-                <img src="imagens/facebook.png" alt="Facebook">
-            </a>
-
-            <a href="https://www.instagram.com/">
-                <img src="imagens/instagram.jpg" alt="Instagram">
-            </a>
-
-            <a href="https://www.linkedin.com/">
-                <img src="imagens/linkedin.png" alt="LinkedIn">
-            </a>
-
-        </nav>
-
-    </footer>
-
+    </main> 
 </body>
 
 </html>
