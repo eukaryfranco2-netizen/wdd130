@@ -165,7 +165,93 @@ h1 {
 }
 
 
-/*Contato*/
+/*------Passeios--------*/
+
+/* ===== ESTILOS DA PÁGINA PASSEIOS =====
+   Cole este bloco no rafting.css, ANTES do @media (responsividade).
+   (.chamada e .botao já vêm do novos-estilos.css da página inicial) */
+
+/* INTRODUÇÃO */
+
+.intro-passeios {
+    padding: 30px 10px 10px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* LISTA DE PASSEIOS */
+
+.passeios {
+    padding: 20px 10px;
+}
+
+.passeio {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    border: 2px solid var(--cor-destaque1);
+}
+
+.passeio img {
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+    border: 2px solid var(--cor-destaque1);
+}
+
+.passeio-info {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.passeio h3 {
+    margin-bottom: 8px;
+    font-family: var(--fonte-titulo);
+    font-size: 22px;
+}
+
+.passeio ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* TABELA DE PREÇOS */
+
+.precos {
+    padding: 30px 10px;
+}
+
+.precos table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.precos caption {
+    padding: 8px;
+    font-style: italic;
+}
+
+.precos th,
+.precos td {
+    padding: 12px;
+    border: 2px solid var(--cor-destaque1);
+}
+
+.precos th {
+    color: #fff;
+    background-color: var(--cor-destaque1);
+}
+
+.precos tbody tr:nth-child(even) {
+    background-color: var(--cor-primaria);
+}
+
+
+/*------Contato---------*/
 
 :root {
     --cor-primaria: #9be99b;
@@ -197,7 +283,7 @@ footer {
     margin: 0 auto;
 }
 
-/* CABEÇALHO COM CSS GRID */
+/* CABEÇALHO */
 
 header {
     display: grid;
